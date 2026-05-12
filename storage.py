@@ -4,7 +4,7 @@ import threading
 import datetime
 
 _lock = threading.Lock()
-_DB_URL = os.environ.get('DATABASE_URL', '')
+_DB_URL = 'postgresql://neondb_owner:npg_qOkcVZ19Utdx@ep-delicate-breeze-ap808hxk-pooler.c-7.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
 
 # ── PostgreSQL backend ────────────────────────────────────────────────────────
 
