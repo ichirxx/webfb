@@ -8,7 +8,7 @@ This tool automates the creation of Facebook accounts with various customization
 
 ## Project Structure
 - `neww.py` - Main application script
-- `main.py` - Entry point that runs weynnew.py
+- `main.py` - Entry point that runs neww.py
 - `pyproject.toml` - Python project configuration and dependencies
 - `chrxfb.txt` - Output file with created account details (generated during runtime)
 
@@ -39,7 +39,7 @@ This tool automates the creation of Facebook accounts with various customization
 1. Run the application
 2. Choose name type (Filipino or RPW)
 3. Select gender (Male/Female/Mixed)
-4. Choose email domain option (Temporary domains or Custom domain weyn.store)
+4. Choose email domain option (Temporary domains or Custom domain ygmail.cfd)
 5. Choose password option (Auto-generated or Custom)
 6. Enter number of accounts to create
 7. Results are automatically saved to `chrxfb.txt`
