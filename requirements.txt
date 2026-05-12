@@ -19,3 +19,4 @@ flask
 psycopg2-binary
 pyotp
 requests
+gunicorn==21.2.0
