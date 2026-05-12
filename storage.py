@@ -4,15 +4,13 @@ import threading
 import datetime
 
 _lock = threading.Lock()
-_DB_URL = os.environ.get('DATABASE_URL', '')
+_DB_URL = 'postgresql://neondb_owner:npg_qOkcVZ19Utdx@ep-delicate-breeze-ap808hxk-pooler.c-7.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
 
 # ── PostgreSQL backend ────────────────────────────────────────────────────────
 
 def _get_conn():
     import psycopg2
     url = _DB_URL
-    if url.startswith('postgres://'):
-        url = 'postgresql://' + url[len('postgres://'):]
     return psycopg2.connect(url)
 
 
@@ -186,7 +184,7 @@ def save_session(session_id, count, domain):
             print(f'[storage] save_session error: {e}')
     else:
         try:
-            with open('weynFBCreate.txt', 'a') as f:
+            with open('chrxfb.txt', 'a') as f:
                 ts  = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                 sep = f"\n{'='*60}\n SESSION {ts} | {count} account(s) | {domain}\n{'='*60}\n"
                 f.write(sep)
@@ -212,7 +210,7 @@ def save_account(session_id, uid, password, name='', email=''):
             print(f'[storage] save_account error: {e}')
     else:
         try:
-            with open('weynFBCreate.txt', 'a') as f:
+            with open('chrxfb.txt', 'a') as f:
                 f.write(f"{uid}|{password}\n")
         except Exception as e:
             print(f'[storage] save_account file error: {e}')
@@ -255,7 +253,7 @@ def get_accounts_text():
             return None
     else:
         try:
-            with open('weynFBCreate.txt') as f:
+            with open('chrxfb.txt') as f:
                 return f.read()
         except Exception:
             return None
@@ -278,7 +276,7 @@ def get_accounts_list():
             return []
     else:
         try:
-            with open('weynFBCreate.txt') as f:
+            with open('chrxfb.txt') as f:
                 return [
                     l.strip() for l in f
                     if l.strip() and not l.startswith('=') and not l.startswith(' SESSION')
@@ -304,7 +302,7 @@ def count_accounts():
             return 0
     else:
         try:
-            with open('weynFBCreate.txt') as f:
+            with open('chrxfb.txt') as f:
                 return sum(
                     1 for l in f
                     if l.strip() and not l.startswith('=') and not l.startswith(' SESSION')
