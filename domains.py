@@ -5,14 +5,14 @@ import storage
 _lock = threading.Lock()
 
 _DEFAULT = {
-    "domain_password": "yuennix",
+    "domain_password": "0000",
     "temp": [
         "1secmail.com", "harakirimail.com",
     ],
     "custom": [
-        {"domain": "weyn.store",    "imap_host": "mail.weyn.store",    "imap_user": "admin@weyn.store",    "imap_pass": "yuennix"},
-        {"domain": "jhames.shop",   "imap_host": "mail.jhames.shop",   "imap_user": "admin@jhames.shop",   "imap_pass": "yuennix"},
-        {"domain": "jakulan.site",  "imap_host": "mail.jakulan.site",  "imap_user": "admin@jakulan.site",  "imap_pass": "yuennix"},
+        {"domain": "ygmail.cfd",    "imap_host": "mail.ygmail.cfd",    "imap_user": "admin@ygmail.cfd",    "imap_pass": "0000"},
+        {"domain": "harakirimail.com",   "imap_host": "mail.harakirimail.com",   "imap_user": "admin@harakirimail.com",   "imap_pass": "0000"},
+        {"domain": "lcxmail.site",  "imap_host": "mail.lcxmail.site",  "imap_user": "admin@lcxmail.site",  "imap_pass": "0000"},
     ]
 }
 
@@ -42,7 +42,7 @@ def _save(data):
 
 def get_domain_password():
     with _lock:
-        return _load().get('domain_password', 'yuennix')
+        return _load().get('domain_password', '0000')
 
 
 def set_domain_password(password):
