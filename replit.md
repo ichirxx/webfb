@@ -1,4 +1,4 @@
-# WEYN Facebook Account Creator
+# CHRX Facebook Account Creator
 
 ## Overview
 A Python CLI tool for creating Facebook accounts with customizable options including Filipino names, RPW (Role-Play World) names, and flexible password settings.
@@ -7,10 +7,10 @@ A Python CLI tool for creating Facebook accounts with customizable options inclu
 This tool automates the creation of Facebook accounts with various customization options for names, genders, and passwords.
 
 ## Project Structure
-- `weynnew.py` - Main application script
+- `neww.py` - Main application script
 - `main.py` - Entry point that runs weynnew.py
 - `pyproject.toml` - Python project configuration and dependencies
-- `weynFBCreate.txt` - Output file with created account details (generated during runtime)
+- `chrxfb.txt` - Output file with created account details (generated during runtime)
 
 ## Dependencies
 - Python 3.11+ (configured to work with Replit's Python 3.11)
@@ -26,14 +26,14 @@ This tool automates the creation of Facebook accounts with various customization
   2. RPW (Role-Play World) names (fantasy/creative names)
 - Gender selection (Male/Female/Mixed)
 - Email domain options:
-  1. Temporary email domains (cybertemp.xyz, tmpmail.net, guerrillamail.com, etc.)
-  2. Custom domain (weyn.store) with smart username patterns to reduce checkpoints
+  1. Temporary email domains (cybertemp.xyz, harakirimail.com, guerrillamail.com, etc.)
+  2. Custom domain (ygmail.cfd) with smart username patterns to reduce checkpoints
 - Password options:
   1. Auto-generated (Name + 4 digits)
   2. Custom password
 - Bulk account creation
 - Automatic retry mechanism for failed attempts
-- Results saved to `weynFBCreate.txt`
+- Results saved to `chrxfb.txt`
 
 ## How to Use
 1. Run the application
@@ -42,7 +42,7 @@ This tool automates the creation of Facebook accounts with various customization
 4. Choose email domain option (Temporary domains or Custom domain weyn.store)
 5. Choose password option (Auto-generated or Custom)
 6. Enter number of accounts to create
-7. Results are automatically saved to `weynFBCreate.txt`
+7. Results are automatically saved to `chrxfb.txt`
 
 ## Recent Changes
 - **MAJOR ANTI-CHECKPOINT IMPROVEMENTS** (November 6, 2025 - Latest):
@@ -55,7 +55,7 @@ This tool automates the creation of Facebook accounts with various customization
   - Expected checkpoint reduction: 30-50% for custom domain usage
   
 - **CUSTOM DOMAIN SUPPORT** (November 6, 2025):
-  - Added support for custom domain (weyn.store) with anti-checkpoint features
+  - Added support for custom domain (ygmail.cfd) with anti-checkpoint features
   - New email domain selection menu: choose between temp domains or custom domain
   - Smart username generation with 4 different patterns for custom domain:
     1. firstname.lastname + numbers (e.g., john.smith123)
@@ -80,7 +80,7 @@ This tool automates the creation of Facebook accounts with various customization
   
 - **IMPROVED EMAIL SYSTEM**:
   - Expanded from 2 to 6 reliable email domains
-  - Domains: cybertemp.xyz, tmailor.com, tmpmail.net, 10mail.org, guerrillamail.com, tempmail.com
+  - Domains: cybertemp.xyz, tmailor.com, harakirimail.com, 10mail.org, guerrillamail.com, tempmail.com
   - Longer username length (12-18 chars) for better distribution
   - Better domain rotation to avoid rate limiting
   
@@ -110,9 +110,9 @@ None specified yet.
 - Output: Text file with account credentials (weynFBCreate.txt)
 - Environment: Replit NixOS with Python 3.11 module
 
-## IMPORTANT: Custom Domain Setup (weyn.store)
+## IMPORTANT: Custom Domain Setup (ygmail.cfd)
 
-To minimize checkpoints when using your custom domain (weyn.store), you MUST configure proper email authentication records:
+To minimize checkpoints when using your custom domain (ygmail.cfd), you MUST configure proper email authentication records:
 
 ### Required DNS Records:
 
@@ -132,16 +132,16 @@ To minimize checkpoints when using your custom domain (weyn.store), you MUST con
    ```
    Type: TXT
    Name: _dmarc
-   Value: v=DMARC1; p=none; rua=mailto:dmarc@weyn.store
+   Value: v=DMARC1; p=none; rua=mailto:dmarc@ygmail.cfd
    ```
    This provides email validation policy
 
 ### Domain Warming Recommendations:
 
-- **Send legitimate emails first**: Before creating FB accounts, send and receive real emails from weyn.store for a few days
+- **Send legitimate emails first**: Before creating FB accounts, send and receive real emails from ygmail.cfd for a few days
 - **Build email reputation**: Have real conversations, not just FB verification emails
 - **Gradual increase**: Don't create 100 accounts on day 1, start with 5-10 per day
-- **Mix with temp domains**: Use both temporary domains and weyn.store to avoid patterns
+- **Mix with temp domains**: Use both temporary domains and ygmail.cfd to avoid patterns
 
 ### Why This Matters:
 
