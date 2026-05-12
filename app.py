@@ -1051,8 +1051,7 @@ def webhook_email():
         'code':   code or ('link' if fb_link else None),
     })
 
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port, debug=False)
 
-if __name__ == '__main__':
-    auth.start_bot()
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False, threaded=True)
