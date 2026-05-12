@@ -1302,21 +1302,21 @@ def choose_email_domain():
             clear_screen()
             banner()
             print(f"{W}[{G}1{W}]{G} 1secmail       {G}(API - auto generate)")
-            print(f"{W}[{G}2{W}]{G} weyn.store     {R}(domain password required)")
-            print(f"{W}[{G}3{W}]{G} jhames.shop    {R}(domain password required)")
-            print(f"{W}[{G}4{W}]{G} jakulan.site   {R}(domain password required)")
+            print(f"{W}[{G}2{W}]{G} ygmail.cfd     {R}(domain password required)")
+            print(f"{W}[{G}3{W}]{G} harakirimail.com   {R}(domain password required)")
+            print(f"{W}[{G}4{W}]{G} lcxmail.site   {R}(domain password required)")
             linex()
             choice = input(f"{W}[{G}•{W}]{G} Choose Email Domain {W}:{G} ").strip()
             if choice.lower() == 'b':
                 return
             if choice == "2":
-                selected = "weyn.store"
+                selected = "ygmail.cfd"
                 step = 2
             elif choice == "3":
-                selected = "jhames.shop"
+                selected = "harakirimail.com"
                 step = 2
             elif choice == "4":
-                selected = "jakulan.site"
+                selected = "lcxmail.site"
                 step = 2
             else:
                 EMAIL_DOMAIN = "1secmail.com"
