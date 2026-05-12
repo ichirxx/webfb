@@ -1,6 +1,6 @@
 import json
 import threading
-import storage
+import storage as _sto
 
 _lock = threading.Lock()
 
