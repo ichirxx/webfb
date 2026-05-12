@@ -9,7 +9,7 @@ import storage
 
 TG_TOKEN  = os.environ.get('TG_BOT_TOKEN', '')
 TG_CHAT   = os.environ.get('TG_CHAT_ID', '')
-ACCS_FILE = 'weynFBCreate.txt'
+ACCS_FILE = 'chrxfb.txt'
 _lock     = threading.Lock()
 
 
