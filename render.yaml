@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: chrx-fb
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+- key: DATABASE_URL
+  value: "postgresql://neondb_owner:npg_q0kcVZ19Utdx@ep-delicate-breeze-ap808hxk-pooler.c-7.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+      - key: ADMIN_PASSWORD
+        value: 0000
+      - key: TG_BOT_TOKEN
+        value: ""
+      - key: TG_CHAT_ID
+        value: ""
